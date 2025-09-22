@@ -1,0 +1,81 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sceneHeading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bigPrint {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.character {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.dialogue {
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+
+.music-cue {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004999;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+  .bigPrint, .sceneHeading, .character, .dialogue {
+    font-size: 16px;
+  }
+  .music-cue {
+    font-size: 18px;
+  }
+}
