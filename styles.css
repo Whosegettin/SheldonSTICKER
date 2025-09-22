@@ -6,7 +6,7 @@ body {
 }
 
 .page {
-  width: 650px;          /* Slim like a script PDF */
+  width: 250px;          /* Slim like a script PDF */
   margin: auto;
   padding: 40px;
   background-color: #ffffff;
