@@ -6,7 +6,7 @@ body {
 }
 
 .page {
-  width: 250px;          /* Slim like a script PDF */
+  width: 450px;          /* Slim like a script PDF */
   margin: auto;
   padding: 40px;
   background-color: #ffffff;
@@ -34,6 +34,7 @@ body {
 
 .dialogue {
   width: 65%;
+  text-align: center;
   margin: 0 auto 15px auto;  /* Centered */
   text-align: left;
   line-height: 1.4;
