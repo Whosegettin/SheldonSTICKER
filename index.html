@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screenplay Snippet with Music</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .snippet {
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .music-cue {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #004999;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="snippet">
+            FADE IN:
+
+            EXT. CITY STREET - DAY
+            A long, deserted city street with towering buildings on either side.
+            TOM walks down the sidewalk, hands in his pockets, head down. He passes
+            a wall plastered with various stickers. One of them catches his eye: a QR code.
+
+            He scans it with his phone, curious. A webpage loads, revealing a snippet of a
+            SCREENPLAY.
+        </div>
+        <div class="music-cue">MUSIC QUEUE</div>
+        <button class="button" id="playButton">▶ Play the Song</button>
+        <audio id="audioPlayer">
+            <source src="song.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="actions">
+            <a class="button" href="#" target="_blank">Read More</a>
+            <a class="button" href="#" target="_blank">About Us</a>
+        </div>
+    </div>
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('audioPlayer');
+        playButton.addEventListener('click', function() {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
