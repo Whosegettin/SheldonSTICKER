@@ -1,106 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sheldon's Crossing Snippet w/ Music</title>
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-         .sceneHeading {
-            white-space: pre-wrap;
-            font-family: 'Courier New', monospace;
-            font-size: 18px;
-            font-weight: bold;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-        .bigPrint {
-            white-space: pre-wrap;
-            font-family: 'Courier New', monospace;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-        .music-cue {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 10px;
-            background-color: #0066cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #004999;
-        }
-        .actions {
-            text-align: center;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Sheldon's Crossing Snippet w/ Music</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sceneHeading">EXT. A BACKYARD - SUNRISE</div>
-        <div class="bigPrint">Magpie gossiping fills the cool autumn air as we descend on a backyard with all the trappings of Aussie suburbia: 
-            A trusty barbie. A slowly rusting mower. An ancient clothesline. 
-            But, amidst this familiar snapshot lies- 
-            A thriving realm- 
-            A garden.</div>
-        <div class="sceneHeading">EXT. ATOP THE GARDEN’S BIRDBATH - THAT SAME MOMENT</div>
-        <div class="bigPrint">Two snails stand sentinel. Drinking in the lightening garden before them. Their weather worn shells and wrinkled bodies reveal their age. PERRYWINKLE (65) and WORDSWORTH (73) have stood here many times before. </div>
-        <div class="character">PERRYWINKLE</div>
-        <div class="dialogue">Perhaps He does not beckon to us today Wordsworth.</div>
-        <div class="character">WORDSWORTH </div>
-        <div class="dialogue">Perhaps not Perrywinkle.</div>
-        <div class="bigPrint">An answer. Perhaps an unwanted one. The snails begin their long winding descent, heavy with the burden of it. 
-            As though sensing this weariness the heavens themselves yield in response. A lone drop of water PLINKS in the birdbath rippling outwards. 
-            The two snails halt.</div>
-        <div class="character">PERRYWINKLE </div>
-        <div class="dialogue">Or...perhaps He does.</div>
-        <div class="bigPrint">Perrywinkle turns to Wordsworth forebodingly. </div>
-        <div class="character">PERRYWINKLE </div>
-        <div class="dialogue">Send out Leaves to the young Escargolytes at once Wordsworth. </div>
-        <div class="bigPrint">He thrusts his arms out slowly. Wordsworth SIGHS with exasperation. Ever the performer that old Perrywinkle.</div>
-        <div class="character">PERRYWINKLE </div>
-        <div class="dialogue">Today another Crossing thus begins.</div>
-        <div class="bigPrint">The garden itself seems to hold it’s breath. </div>
-        <button class="music-cue" id="playButton">MUSIC CUE: GREAT SOUTHERN LAND by ICEHOUSE ▶ Play the Song</button>
-        <audio id="audioPlayer">
-            <source src="song.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <div class="actions">
-            <a class="button" href="#" target="_blank">Read More</a>
-            <a class="button" href="#" target="_blank">About Us</a>
-        </div>
+  <div class="container">
+    <div class="sceneHeading">EXT. A BACKYARD - SUNRISE</div>
+    <div class="bigPrint">
+      Magpie gossiping fills the cool autumn air as we descend on a backyard with all the trappings of Aussie suburbia:
+      A trusty barbie. A slowly rusting mower. An ancient clothesline. 
+      But, amidst this familiar snapshot lies—<br>
+      A thriving realm—<br>
+      A garden.
     </div>
-    <script>
-        const playButton = document.getElementById('playButton');
-        const audio = document.getElementById('audioPlayer');
-        playButton.addEventListener('click', function() {
-            audio.play();
-        });
-    </script>
+
+    <div class="sceneHeading">EXT. ATOP THE GARDEN’S BIRDBATH - THAT SAME MOMENT</div>
+    <div class="bigPrint">
+      Two snails stand sentinel. Drinking in the lightening garden before them. Their weather worn shells and wrinkled bodies reveal their age. 
+      PERRYWINKLE (65) and WORDSWORTH (73) have stood here many times before. 
+    </div>
+
+    <div class="character">PERRYWINKLE</div>
+    <div class="dialogue">Perhaps He does not beckon to us today Wordsworth.</div>
+
+    <div class="character">WORDSWORTH</div>
+    <div class="dialogue">Perhaps not Perrywinkle.</div>
+
+    <div class="bigPrint">
+      An answer. Perhaps an unwanted one. The snails begin their long winding descent, heavy with the burden of it. 
+      As though sensing this weariness the heavens themselves yield in response. 
+      A lone drop of water PLINKS in the birdbath rippling outwards. 
+      The two snails halt.
+    </div>
+
+    <div class="character">PERRYWINKLE</div>
+    <div class="dialogue">Or...perhaps He does.</div>
+
+    <div class="bigPrint">Perrywinkle turns to Wordsworth forebodingly.</div>
+
+    <div class="character">PERRYWINKLE</div>
+    <div class="dialogue">Send out Leaves to the young Escargolytes at once Wordsworth.</div>
+
+    <div class="bigPrint">
+      He thrusts his arms out slowly. Wordsworth SIGHS with exasperation. 
+      Ever the performer that old Perrywinkle.
+    </div>
+
+    <div class="character">PERRYWINKLE</div>
+    <div class="dialogue">Today another Crossing thus begins.</div>
+
+    <div class="bigPrint">The garden itself seems to hold its breath.</div>
+
+    <div class="music-cue">MUSIC CUE: GREAT SOUTHERN LAND by ICEHOUSE</div>
+    <button class="button" id="playButton">▶ Play the Song</button>
+
+    <audio id="audioPlayer">
+      <source src="song.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="actions">
+      <a class="button" href="#" target="_blank">Read More</a>
+      <a class="button" href="#" target="_blank">About Us</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
