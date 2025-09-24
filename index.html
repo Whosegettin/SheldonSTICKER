@@ -70,11 +70,11 @@
     }
 
     /* Divider between pages */
-    .divider {
-      width: 8.5in;
-      border-top: 1px solid #000;
-      margin: 0 auto;
-    }
+.divider { 
+  width: 8.5in; 
+  border-top: 1px solid #000; 
+  margin: -5.5in auto 2.5in auto; / 
+}
 
     /* Script page styling */
     .script-page {
@@ -106,8 +106,6 @@
       margin-top: 0.2in;
       font-weight: bold;
     }
-
-    /* Add extra white space at the bottom of the final page */
     .page:last-of-type {
       padding-bottom: 0.5in;
     }
@@ -115,9 +113,11 @@
 </head>
 <body>
   <div class="page">
-    <!-- Updated copy: this section presents a preview of the script rather than a screening. -->
-     The Best Australian Film (You've Never Seen)<br>
-      This is a preview of the script for<br>
+    <!-- Introductory tagline placed above the title -->
+    <div class="tagline">
+      <strong>The Best Australian Film (You've Never Seen)</strong><br>
+      This is a preview of the script for
+    </div>
     <div class="title">SHELDON'S CROSSING</div>
     <div class="subtitle">Written by</div>
     <div class="names">
