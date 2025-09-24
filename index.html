@@ -52,21 +52,22 @@
       line-height: 1.5;
     }
     .dedication {
-      position: absolute;
-      left: 1.5in;
-      bottom: 1.5in;
-      font-size: 10pt;
-      font-style: italic;
-      width: 60%;
-      line-height: 1.4;
-    }
+  position: absolute;
+  left: 1.5in;
+  bottom: 0.75in;   /* was 1.5in, lowered closer to bottom */
+  font-size: 10pt;
+  font-style: italic;
+  width: 60%;
+  line-height: 1.4;
+}
 
-    /* Divider between pages */
+
     .divider {
-      width: 8.5in;
-      border-top: 1px solid #000;
-      margin: 0 auto;
-    }
+  width: 8.5in;
+  border-top: 1px solid #000;
+  margin: 0.25in auto 0.25in auto;  /* tighter spacing above and below */
+}
+
     .scene-heading {
       margin-top: 0.25in;
       text-transform: uppercase;
