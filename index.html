@@ -28,16 +28,13 @@
   box-sizing: border-box;
   position: relative;
 }
-
-    @media (max-width: 768px) {
+/* Make it phone-friendly */
+@media (max-width: 768px) {
   .page {
     width: 100%;
+    max-width: 100%;
     min-height: auto;
-    padding: 1.5em; /* smaller, relative padding */
-  }
-      @media (max-width: 480px) {
-  .page {
-    padding: 1em;
+    padding: 1em;   /* relative padding instead of inches */
   }
     /* Primary title styling */
     .title {
